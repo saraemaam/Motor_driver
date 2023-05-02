@@ -1,0 +1,28 @@
+/*
+ * dcMotor_prg.c
+ *
+ *  Created on: Mar 25, 2020
+ *      Author: Admin
+ */
+
+
+#include"../Lib/Std_types.h"
+#include"../Lib/Bit_math.h"
+#include"Dio_int.h"
+#include"dcMotor_int.h"
+#include"dcMotor_cfg.h"
+
+void DC_Motor_vidTurnOn()
+	{
+
+    Dio_vidSetPinVal(DC_Motor_u8_BASE_PIN ,DIO_u8HIGH);
+
+	}
+void DC_Motor_vidTurnOff()
+	{
+		Dio_vidSetPinVal(DC_Motor_u8_BASE_PIN ,DIO_u8LOW);
+	}
+void DC_Motor_vidInit()
+	{
+    Dio_vidSetPinDir(DC_Motor_u8_BASE_PIN ,DIO_u8OUTPUT);
+	}

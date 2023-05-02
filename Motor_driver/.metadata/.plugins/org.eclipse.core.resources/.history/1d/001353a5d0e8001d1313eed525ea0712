@@ -1,0 +1,27 @@
+/**************************************************************************************************
+ *  Name        : Motor_Driver.c
+ *  Description : Test Motor driver
+ *  Author      : Sarah
+ ***************************************************************************************************/
+
+#include"motor_module.h"
+#include"gpio.h"
+#include<util/delay.h>
+
+int main(void)
+{
+
+	Motor_init();
+
+	while(1){
+
+		Motor_CW_direction();
+		_delay_ms(500);
+		Motor_ACW_direction();
+
+	}
+
+
+
+}
+

@@ -1,0 +1,39 @@
+/****************************************************************
+ * Module: Motor
+ *
+ * File Name: motor_module.h
+ *
+ * Description: Source file for motor module
+ *
+ * Author: Sarah
+ ******************************************************************/
+
+#include "motor_module.h"
+#include "gpio.h"
+
+MOTOR_OUT1_OUT2_PORT
+MOTOR_OUT1_pin
+MOTOR_OUT2_pin
+
+/* Module initialization make pins output*/
+
+void Motor_init(void){
+
+	GPIO_setupPinDirection(MOTOR_OUT1_OUT2_PORT,MOTOR_OUT1_pin,PIN_OUTPUT);
+	GPIO_setupPinDirection(MOTOR_OUT1_OUT2_PORT,MOTOR_OUT2_pin,PIN_OUTPUT);
+
+}
+void Motor_CW_direction(void){
+
+
+
+
+}
+void Motor_ACW_direction(void){
+
+
+
+
+
+}
+

@@ -1,0 +1,15 @@
+/*
+ * dcMotor_int.h
+ *
+ *  Created on: Mar 25, 2020
+ *      Author: Admin
+ */
+
+#ifndef DCMOTOR_INT_H_
+#define DCMOTOR_INT_H_
+
+void DC_Motor_vidInit();
+void DC_Motor_vidTurnOff();
+void DC_Motor_vidTurnOn();
+
+#endif /* DCMOTOR_INT_H_ */

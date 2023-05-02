@@ -1,0 +1,13 @@
+/*
+ * dcMotor_cfg.h
+ *
+ *  Created on: Mar 25, 2020
+ *      Author: Admin
+ */
+
+#ifndef DCMOTOR_CFG_H_
+#define DCMOTOR_CFG_H_
+#define DC_Motor_u8_BASE_PIN         DIO_u8PIN_15
+
+
+#endif /* DCMOTOR_CFG_H_ */
